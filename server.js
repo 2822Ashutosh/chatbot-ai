@@ -1335,6 +1335,13 @@ function buildTealiumVarsForElement(el) {
 }
 
 /* ──────────────────────────────────────────────
+   Catch-all: serve index.html for any unmatched route
+   ────────────────────────────────────────────── */
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+/* ──────────────────────────────────────────────
    Start server
    ────────────────────────────────────────────── */
 app.listen(PORT, () => {
