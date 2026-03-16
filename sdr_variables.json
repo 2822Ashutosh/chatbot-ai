@@ -1,0 +1,334 @@
+[
+    {
+        "name": "products",
+        "description": "Products"
+    },
+    {
+        "name": "hostname",
+        "description": "Server"
+    },
+    {
+        "name": "site_section1",
+        "description": "Site Section1"
+    },
+    {
+        "name": "site_section2",
+        "description": "Site Section2"
+    },
+    {
+        "name": "site_section3",
+        "description": "Site Section3"
+    },
+    {
+        "name": "site_section4",
+        "description": "Site Section4"
+    },
+    {
+        "name": "release_version",
+        "description": "Release Version"
+    },
+    {
+        "name": "homepage_cookie",
+        "description": "Homepage Cookie"
+    },
+    {
+        "name": "mid",
+        "description": "MID"
+    },
+    {
+        "name": "page_url_qs",
+        "description": "URL"
+    },
+    {
+        "name": "code_version",
+        "description": "Adobe Code Version"
+    },
+    {
+        "name": "campaign",
+        "description": "Campaign ID"
+    },
+    {
+        "name": "new_repeat",
+        "description": "New/Repeat Visitor"
+    },
+    {
+        "name": "page_name",
+        "description": "Page Name"
+    },
+    {
+        "name": "time_parting",
+        "description": "Time Parting"
+    },
+    {
+        "name": "page_url_wqs",
+        "description": "URL without QS"
+    },
+    {
+        "name": "query_string",
+        "description": "Query String Parameters"
+    },
+    {
+        "name": "visit_num",
+        "description": "Visit Number"
+    },
+    {
+        "name": "load_time",
+        "description": "Page Load Time"
+    },
+    {
+        "name": "user_agent",
+        "description": "User Agent"
+    },
+    {
+        "name": "app_user",
+        "description": "App user"
+    },
+    {
+        "name": "user_modality",
+        "description": "User Modality"
+    },
+    {
+        "name": "vital_signs",
+        "description": "Vital Signs"
+    },
+    {
+        "name": "device_type",
+        "description": "Device Type"
+    },
+    {
+        "name": "site_section1",
+        "description": "Site Section1"
+    },
+    {
+        "name": "site_section2",
+        "description": "Site Section2"
+    },
+    {
+        "name": "site_section3",
+        "description": "Site Section3"
+    },
+    {
+        "name": "site_section4",
+        "description": "Site Section4"
+    },
+    {
+        "name": "release_version",
+        "description": "Release Version"
+    },
+    {
+        "name": "homepage_cookie",
+        "description": "Homepage Cookie"
+    },
+    {
+        "name": "mid",
+        "description": "MID"
+    },
+    {
+        "name": "page_url_qs",
+        "description": "URL"
+    },
+    {
+        "name": "code_version",
+        "description": "Adobe Code Version"
+    },
+    {
+        "name": "campaign",
+        "description": "Campaign ID"
+    },
+    {
+        "name": "new_repeat",
+        "description": "New/Repeat Visitor"
+    },
+    {
+        "name": "page_name",
+        "description": "Page Name"
+    },
+    {
+        "name": "page_url_wqs",
+        "description": "URL without QS"
+    },
+    {
+        "name": "query_string",
+        "description": "Query String Parameters"
+    },
+    {
+        "name": "percentage_viewed",
+        "description": "Percentage Viewed"
+    },
+    {
+        "name": "previous_page",
+        "description": "Previous Page"
+    },
+    {
+        "name": "hit_timestamp",
+        "description": "Hit Timestamp"
+    },
+    {
+        "name": "user_agent",
+        "description": "User Agent"
+    },
+    {
+        "name": "app_user",
+        "description": "App user"
+    },
+    {
+        "name": "internal_keyword",
+        "description": "Internal Keyword"
+    },
+    {
+        "name": "search_count",
+        "description": "Search Count"
+    },
+    {
+        "name": "referrer",
+        "description": "Medium/Referrer"
+    },
+    {
+        "name": "previous_page",
+        "description": "Previous Page"
+    },
+    {
+        "name": "article_name",
+        "description": "Article Name"
+    },
+    {
+        "name": "article_type",
+        "description": "Article Type"
+    },
+    {
+        "name": "video_name",
+        "description": "Video Name"
+    },
+    {
+        "name": "social_interaction",
+        "description": "Social Interaction"
+    },
+    {
+        "name": "download_name",
+        "description": "Download Name"
+    },
+    {
+        "name": "link_text",
+        "description": "Link Text"
+    },
+    {
+        "name": "link_location",
+        "description": "Link Location"
+    },
+    {
+        "name": "accordion_text",
+        "description": "Accordion Text"
+    },
+    {
+        "name": "form_name",
+        "description": "Form Name"
+    },
+    {
+        "name": "search_text",
+        "description": "Search Result Clicked Text"
+    },
+    {
+        "name": "social_item",
+        "description": "Social Share Item"
+    },
+    {
+        "name": "link_href",
+        "description": "Link Click href"
+    },
+    {
+        "name": "download_type",
+        "description": "Download Type"
+    },
+    {
+        "name": "User_ID",
+        "description": "User ID"
+    },
+    {
+        "name": "login_status",
+        "description": "login status"
+    },
+    {
+        "name": "login_persona",
+        "description": "Persona"
+    },
+    {
+        "name": "internal_keyword",
+        "description": "Internal Keyword"
+    },
+    {
+        "name": "search_count",
+        "description": "Search Count"
+    },
+    {
+        "name": "referrer",
+        "description": "Medium/Referrer"
+    },
+    {
+        "name": "previous_page",
+        "description": "Previous Page"
+    },
+    {
+        "name": "article_name",
+        "description": "Article Name"
+    },
+    {
+        "name": "article_type",
+        "description": "Article Type"
+    },
+    {
+        "name": "video_name",
+        "description": "Video Name"
+    },
+    {
+        "name": "social_interaction",
+        "description": "Social Interaction"
+    },
+    {
+        "name": "download_name",
+        "description": "Download Name"
+    },
+    {
+        "name": "link_text",
+        "description": "Link Text"
+    },
+    {
+        "name": "link_location",
+        "description": "Link Location"
+    },
+    {
+        "name": "accordion_text",
+        "description": "Accordion Text"
+    },
+    {
+        "name": "form_name",
+        "description": "Form Name"
+    },
+    {
+        "name": "search_result_clicked_text",
+        "description": "Search Result Clicked Text"
+    },
+    {
+        "name": "social_share_item",
+        "description": "Social Share Item"
+    },
+    {
+        "name": "tealium_profile",
+        "description": "Tealium Profile"
+    },
+    {
+        "name": "tealium_version",
+        "description": "Tealium Version"
+    },
+    {
+        "name": "User_ID",
+        "description": "User ID"
+    },
+    {
+        "name": "login_status",
+        "description": "login status"
+    },
+    {
+        "name": "login_persona",
+        "description": "Persona"
+    }
+]

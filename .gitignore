@@ -1,0 +1,7 @@
+node_modules/
+chat_history.db
+.env
+out.txt
+test_api.js
+*.pyc
+__pycache__/

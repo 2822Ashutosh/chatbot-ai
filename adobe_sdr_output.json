@@ -1,0 +1,272 @@
+[
+  [
+    "",
+    "Data Point",
+    "Generic Link Click (event3)",
+    "PDF Download (event 1)",
+    "Inernal Search Result (event 2)",
+    "Form Inetraction (event 18)",
+    "Form Submit Success Event (event 5)",
+    "Form Error (event6)"
+  ],
+  [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  [
+    "Important Note",
+    "",
+    "When user clicks on any of the link available except for the scenarios mentioned in right columns",
+    "When user clicks on any of the pdf link avaialble for download",
+    "When user lands on search result page",
+    "When user interacts with first form field, by clicking on first field",
+    "When the form is successfully submitted",
+    "When user encounter on any form error available on the website"
+  ],
+  [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  [
+    "Standard Data Points",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  [
+    "s.campaign",
+    "Campaign",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  [
+    "s.server",
+    "Server",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  [
+    "s.list1",
+    "Form Name",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  [
+    "Custom Data Points",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  [
+    "evar9",
+    "MID",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes"
+  ],
+  [
+    "evar10",
+    "URL",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes"
+  ],
+  [
+    "evar14",
+    "Campaign ID",
+    "As Applicable",
+    "As Applicable",
+    "As Applicable",
+    "As Applicable",
+    "As Applicable",
+    "As Applicable"
+  ],
+  [
+    "evar15",
+    "New/Repeat Visitor",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes"
+  ],
+  [
+    "evar17",
+    "Page Name",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes"
+  ],
+  [
+    "evar31",
+    "URL without QS",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes"
+  ],
+  [
+    "evar34",
+    "Query String Parameters",
+    "As Applicable",
+    "As Applicable",
+    "As Applicable",
+    "As Applicable",
+    "As Applicable",
+    "As Applicable"
+  ],
+  [
+    "evar39",
+    "Visit Number",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes",
+    "Yes"
+  ],
+  [
+    "evar11",
+    "Internal Keyword",
+    "",
+    "",
+    "Yes",
+    "",
+    "",
+    ""
+  ],
+  [
+    "evar12",
+    "Search Count",
+    "",
+    "",
+    "Yes",
+    "",
+    "",
+    ""
+  ],
+  [
+    "evar16",
+    "Medium/Referrer",
+    "As Applicable",
+    "As Applicable",
+    "As Applicable",
+    "As Applicable",
+    "As Applicable",
+    "As Applicable"
+  ],
+  [
+    "evar23",
+    "Download Name",
+    "",
+    "Yes",
+    "",
+    "",
+    "",
+    ""
+  ],
+  [
+    "evar24",
+    "Error",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Yes"
+  ],
+  [
+    "evar26",
+    "Link Text",
+    "Yes",
+    "Yes",
+    "",
+    "",
+    "",
+    ""
+  ],
+  [
+    "evar27",
+    "Link Location",
+    "Yes",
+    "Yes",
+    "Yes",
+    "",
+    "",
+    ""
+  ],
+  [
+    "evar30",
+    "Form Name",
+    "",
+    "",
+    "",
+    "Yes",
+    "Yes",
+    "Yes"
+  ],
+  [
+    "evar35",
+    "Link Click href",
+    "Yes",
+    "Yes",
+    "",
+    "",
+    "",
+    ""
+  ],
+  [
+    "evar36",
+    "Download Type",
+    "",
+    "Yes",
+    "",
+    "",
+    "",
+    ""
+  ]
+]
