@@ -1093,8 +1093,85 @@ app.post('/api/scan-elements', async (req, res) => {
     });
 
   } catch (err) {
-    console.error('[Scanner] Error:', err.message);
-    res.status(500).json({ error: 'Failed to scan URL', details: err.message });
+    console.error('[Scanner] Puppeteer failed:', err.message);
+    console.log('[Scanner] Falling back to cheerio (static HTML scan)...');
+    
+    // ── FALLBACK: cheerio-based scan (no browser needed) ──
+    try {
+      const response = await axios.get(targetUrl, {
+        headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' },
+        timeout: 15000
+      });
+      const $ = cheerio.load(response.data);
+      const elements = [];
+      let idx = 0;
+
+      // Scan links
+      $('a[href]').each((i, el) => {
+        const href = $(el).attr('href') || '';
+        const text = $(el).text().trim().replace(/\s+/g, ' ').substring(0, 100);
+        const classes = $(el).attr('class') || '';
+        const isPdf = /\.(pdf|xlsx|tif)$/i.test(href);
+        elements.push({
+          idx: idx++, tag: 'a', category: isPdf ? 'pdf' : 'link',
+          text, classes, type: '', href, name: $(el).attr('name') || '',
+          ariaLabel: $(el).attr('aria-label') || '',
+          dataAttrs: {}, parentChain: [], siblingIndex: 0, siblingCount: 0,
+          classUniqueness: {}, hasUniqueClass: false, uniqueClassName: '',
+          uniqueClassCombo: '', uniqueParentChildSelector: classes ? `.${classes.split(' ')[0]}` : 'a',
+          allAttrs: {}
+        });
+      });
+
+      // Scan buttons
+      $('button, input[type="submit"], input[type="button"], [role="button"]').each((i, el) => {
+        const text = $(el).text().trim() || $(el).attr('value') || '';
+        const classes = $(el).attr('class') || '';
+        elements.push({
+          idx: idx++, tag: el.tagName.toLowerCase(), category: 'button',
+          text: text.substring(0, 100), classes, type: $(el).attr('type') || '',
+          href: '', name: $(el).attr('name') || '',
+          ariaLabel: $(el).attr('aria-label') || '',
+          dataAttrs: {}, parentChain: [], siblingIndex: 0, siblingCount: 0,
+          classUniqueness: {}, hasUniqueClass: false, uniqueClassName: '',
+          uniqueClassCombo: '', uniqueParentChildSelector: classes ? `.${classes.split(' ')[0]}` : 'button',
+          allAttrs: {}
+        });
+      });
+
+      // Scan forms
+      $('form').each((i, el) => {
+        elements.push({
+          idx: idx++, tag: 'form', category: 'form',
+          text: $(el).attr('id') || $(el).attr('name') || 'form',
+          classes: $(el).attr('class') || '', type: '',
+          href: $(el).attr('action') || '', name: $(el).attr('name') || '',
+          ariaLabel: '', dataAttrs: {}, parentChain: [],
+          siblingIndex: 0, siblingCount: 0, classUniqueness: {},
+          hasUniqueClass: false, uniqueClassName: '', uniqueClassCombo: '',
+          uniqueParentChildSelector: '', allAttrs: {}
+        });
+      });
+
+      const counts = {};
+      for (const el of elements) {
+        counts[el.category] = (counts[el.category] || 0) + 1;
+      }
+
+      console.log(`[Scanner] Cheerio fallback found ${elements.length} elements`);
+      res.json({
+        success: true,
+        url: targetUrl,
+        pageTitle: $('title').text() || '',
+        metaDescription: $('meta[name="description"]').attr('content') || '',
+        totalElements: elements.length,
+        counts,
+        elements
+      });
+    } catch (fallbackErr) {
+      console.error('[Scanner] Cheerio fallback also failed:', fallbackErr.message);
+      res.status(500).json({ error: 'Failed to scan URL', details: fallbackErr.message });
+    }
   } finally {
     if (browser) await browser.close();
   }
